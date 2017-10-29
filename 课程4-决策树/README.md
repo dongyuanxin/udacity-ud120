@@ -6,7 +6,7 @@
 | - | - |
 | min_samples_split | 区分一个内部节点需要的最少的样本数。默认为2.**可以为float，代表百分比** |
 | criterion | 衡量分类的质量。支持的标准有"gini"代表的是Gini impurity(不纯度)与"entropy"代表的是information gain（信息增益）。|
-| max_depth | 默认为"None".表示树的最大深度。如果是"None",则节点会一直扩展直到所有的叶子都是纯的或者所有的叶子节点都包含少于min_samples_split个样本点。 |
+| max_depth | 默认为"None".表示树的最大深度。如果是"None",则节点会一直扩展直到所有的叶子都是纯的或者所有的叶子节点都包含少于min_samples_split个样本点。**如果特征量很大的话，常用的可以取值10-100之间** |
 | max_features | 默认为None。|
 
 #### 1.2 针对max_features
